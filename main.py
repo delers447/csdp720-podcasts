@@ -139,7 +139,7 @@ competition_output = pd.DataFrame({'Id': competition_ids,
 
 with open("submission.csv", 'w') as f:
 	f.write("id,Listening_Time_minutes\n")
-	for index, row in output.iterrows():
+	for index, row in competition_output.iterrows():
 		f.write(f"{row['Id']},{row['Ensemble']}\n")
 
 ############################################
