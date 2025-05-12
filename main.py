@@ -165,7 +165,7 @@ print("==== Exporting CSV ====")
 with open("validation_output.csv", 'w') as f:
 	f.write("Id,True Value,Ensemble,Residual,dan_model1,dan_model2,dan_model3, sagar_model, celia_model\n")
 	for index, row in output.iterrows():
-		f.write(f"{row['Id']},{row['True Value']},{row['Ensemble']},{row['Residual']},{row['dan_model1']},{row['dan_model2']},{row['dan_model3']},{row['sagar_model']}{row['celia_model']}\n")
+		f.write(f"{row['Id']},{row['True Value']},{row['Ensemble']},{row['Residual']},{row['dan_model1']},{row['dan_model2']},{row['dan_model3']},{row['sagar_model']},{row['celia_model']}\n")
 
 ############################################
 ############################################
